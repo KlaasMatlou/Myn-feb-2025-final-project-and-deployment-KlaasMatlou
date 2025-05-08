@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niche Travel Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">TravelVibe...</h1>
+      <ul class="nav-links">
+        <li><a href="#" id="homeBtn">Home</a></li>
+        <li class="dropdown">
+          <a href="#categories">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a href="#places">Places</a></li>
+            <li><a href="#food">Food & Drinks</a></li>
+            <li><a href="#cars">Cars</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="welcome">
+      <h2>Welcome to TravelVibe</h2>
+      <div class="welcome-message">
+        <p>We specialize in helping you book the most amazing trips to the top destinations worldwide. Whether you're looking for luxurious getaways or exciting adventures, we've got you covered.</p>
+        <p>Our blog features curated lists of places, food, and the best cars to travel in. We make sure your travels are memorable and full of fun!</p>
+        <p>With our easy booking system and travel tips, your dream vacation is just a few clicks away. Let's start planning your next adventure with TravelVibe!</p>
+      </div>
+    </section>
+    <section id="places">
+      <h2>Top Places to Visit</h2>
+      <div class="gallery">
+        <a href="paris.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="Eiffel Tower">
+        </a>
+        <a href="bali.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Ayval%C4%B1k%2C_Bal%C4%B1kesir_Province.jpg" alt="Ayvalik">
+        </a>
+        <a href="new-york.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Statue_of_Liberty%2C_NY.jpg" alt="New York">
+        </a>
+        <a href="santorini.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Oia_sunset_-_panoramio_%282%29.jpg" alt="Santorini">
+        </a>
+        <a href="tokyo.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg" alt="Tokyo">
+        </a>
+      </div>
+    </section>
+    <section id="food">
+      <h2>Food & Drinks</h2>
+      <div class="gallery">
+        <a href="pizza.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Pizza">
+        </a>
+        <a href="cocktail.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/15-09-26-RalfR-WLC-0084.jpg" alt="Cocktail">
+        </a>
+        <a href="sushi.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi">
+        </a>
+        <a href="wine.html">
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/Red_Wine_Glass.jpg" alt="Red Wine">
+        </a>
+      </div>
+    </section>
+    <section id="cars">
+      <h2>Cars to Travel In</h2>
+      <div class="gallery">
+        <a href="car.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Mercedes-AMG_C_63_%28W206%29_IMG_0305.jpg" alt="Mercedes-Benz C200" class="car-info" data-info="Mercedes-Benz C200: 4-door sedan, hybrid engine, top speed 220km/h">
+        </a>
+        <a href="Land-Cruiser.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/2021_Toyota_Land_Cruiser_300_3.4_ZX_%28Colombia%29_front_view_04.png" alt="Toyota Land Cruiser" class="car-info" data-info="Toyota Land Cruiser: SUV, 4WD, excellent off-road capability">
+        </a>
+        <a href="M5.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/2018_BMW_M5_Automatic_4.4.jpg" alt="BMW M5" class="car-info" data-info="BMW M5: 4-door sedan, hybrid engine, top speed 330km/h">
+        </a>
+      </div>
+      <div id="infoBox"></div>
+    </section>
+    <section id="contact">
+      <h2>Make a Reservation</h2>
+      <form id="reservationForm">
+        <input type="text" name="fullName" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="date" name="reservationDate" required />
+        <select name="reservationType" required>
+          <option value="">-- Select Reservation Type --</option>
+          <option value="Tour">Tour</option>
+          <option value="Car Rental">Car Rental</option>
+          <option value="Food & Drink">Food & Drink</option>
+        </select>
+        <select name="paymentMethod" required>
+          <option value="">-- Select Payment Method --</option>
+          <option value="EFT">Electronic Funds Transfer</option>
+          <option value="Upon Arrival">Upon Arrival</option>
+        </select>
+        <textarea name="message" placeholder="Additional Message" required></textarea>
+        <button type="submit">Submit Reservation</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+    
+  </main>
+  <footer>
+    <p>&copy; 2025 TravelVibe Blog for your needs. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#" title="Facebook">🔵</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="Twitter">🐦</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

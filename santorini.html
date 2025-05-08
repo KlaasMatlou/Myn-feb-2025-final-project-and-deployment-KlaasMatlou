@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Santorini</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5c518;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(245, 197, 24, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(245, 197, 24, 0.5);
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      background-color: #f5c518;
+      color: #000;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Discover Santorini</h1>
+    <p>Santorini, the jewel of the Aegean Sea, is known for its iconic whitewashed houses, breathtaking sunsets, and crystal-clear waters. It's the perfect romantic getaway or solo retreat to reconnect with beauty and serenity.</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://source.unsplash.com/featured/?santorini-village" alt="Santorini Village">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Thira_%28Santorini%29_-_Ia-01.jpg" alt="Santorini Oia">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/12063_-_Santorin_-_Fira_de_nuit.jpeg" alt="Santorini Fira Night">
+  </div>
+
+  <div style="text-align: center;">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>

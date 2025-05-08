@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore New York</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5c518;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(245, 197, 24, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(245, 197, 24, 0.5);
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      background-color: #f5c518;
+      color: #000;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore New York</h1>
+    <p>New York City is a dynamic metropolis pulsing with energy, iconic landmarks, and cultural richness. From Times Square to Central Park and Broadway to Brooklyn, every corner offers something inspiring, bold, and unforgettable.</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Times_Square%2C_Broadway%2C_May_2016.jpg" alt="Times Square">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Luchtfoto_van_Lower_Manhattan.jpg" alt="Lower Manhattan">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Santorin_%28GR%29%2C_Ia%2C_Vier_Glocken_--_2017_--_2720-6-2.jpg" alt="Brooklyn Bridge">
+  </div>
+
+  <div style="text-align: center;">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>

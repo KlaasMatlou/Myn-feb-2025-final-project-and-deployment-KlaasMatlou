@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover Bali</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5c518;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(245, 197, 24, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(245, 197, 24, 0.5);
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      background-color: #f5c518;
+      color: #000;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Discover Bali</h1>
+    <p>Bali is a tropical paradise famous for its lush landscapes, vibrant culture, and tranquil beaches. Whether you're seeking adventure, wellness, or stunning views, Bali offers an ideal escape into nature and spiritual serenity.</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Oia_Santorini_2023.jpg" alt="Bali Beach">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Ayvalik-panorama.jpg" alt="Bali Temple">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ayval%C4%B1k%2C_Turkey.jpg" alt="Bali Rice Fields">
+  </div>
+
+  <div style="text-align: center;">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>

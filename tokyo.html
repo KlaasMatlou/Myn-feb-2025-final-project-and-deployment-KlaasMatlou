@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Tokyo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5c518;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(245, 197, 24, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(245, 197, 24, 0.5);
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      background-color: #f5c518;
+      color: #000;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore Tokyo</h1>
+    <p>Tokyo is a dazzling blend of tradition and cutting-edge modernity. From historic temples and serene gardens to vibrant nightlife and futuristic architecture, the city offers an unforgettable journey through culture, cuisine, and innovation.</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/National_Diet_Building_02.jpg" alt="National Diet Building">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/2019-09-05_Rainbow_bridge%2C_view_from_Daibo_park%2C_Tokyo.jpg" alt="Rainbow Bridge">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg" alt="Shinjuku Skyscrapers">
+  </div>
+
+  <div style="text-align: center;">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
